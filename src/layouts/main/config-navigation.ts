@@ -108,12 +108,12 @@ export const pageLinks = [
 ];
 
 export const navConfig = [
-  { title: 'Home', path: paths.marketing.root },
-  { title: 'About', path:paths.marketing.about },
+  { title: 'Home', path: '/'},
+  { title: 'About Us', path:'/about'},
   {
     title: 'Features  ',
-    path: paths.marketing.services,
+    path: '/feature',
     // children: [pageLinks[0], pageLinks[1], pageLinks[2], pageLinks[3], pageLinks[4], pageLinks[5]],
   },
-  { title: 'Contact', path: paths.marketing.contact },
+  { title: 'Contact', path: '/contact'},
 ];

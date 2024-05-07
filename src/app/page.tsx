@@ -1,5 +1,6 @@
 import MainLayout from 'src/layouts/main';
-import HomeView from 'src/sections/_home/view/home-view';
+
+import MarketingLandingPage from './marketing/page';
 
 // ----------------------------------------------------------------------
 
@@ -10,7 +11,7 @@ export const metadata = {
 export default function HomePage() {
   return (
     <MainLayout>
-      <HomeView />
+      <MarketingLandingPage />
     </MainLayout>
   );
 }
