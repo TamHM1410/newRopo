@@ -1,27 +1,16 @@
 'use client';
 
-import {
-  _brands,
-  _members,
-  _caseStudies,
-  _testimonials,
-  _marketingPosts,
-  _pricingMarketing,
-} from 'src/_mock';
+import { _brands, _testimonials, _marketingPosts, _pricingMarketing } from 'src/_mock';
 
-import MarketingTeam from '../team/marketing-team';
 import MarketingNewsletter from '../marketing-newsletter';
 import MarketingOurClients from '../marketing-our-clients';
 import MarketingLandingHero from '../landing/marketing-landing-hero';
-import MarketingLandingFaqs from '../landing/marketing-landing-faqs';
-import MarketingLandingAbout from '../landing/marketing-landing-about';
 import MarketingTestimonial from '../testimonial/marketing-testimonial';
 import PricingMarketing from '../../pricing/marketing/pricing-marketing';
-import MarketingLandingProcess from '../landing/marketing-landing-process';
-import MarketingLandingFreeSEO from '../landing/marketing-landing-free-seo';
-import MarketingLandingServices from '../landing/marketing-landing-services';
+import MarketingLandingStatics from '../landing/marketing-landing-static';
+import MarketingLandingDownload from '../landing/marketing-landing-download';
+import MarketingLandingCoreFeature from '../landing/marketing-landing-feature';
 import BlogMarketingLatestPosts from '../../blog/marketing/marketing-latest-posts';
-import MarketingLandingCaseStudies from '../landing/marketing-landing-case-studies';
 
 // ----------------------------------------------------------------------
 
@@ -32,25 +21,28 @@ export default function MarketingLandingView() {
 
       <MarketingOurClients brands={_brands} />
 
-      <MarketingLandingAbout />
+      <MarketingLandingCoreFeature />
+      <MarketingLandingStatics />
 
-      <MarketingLandingServices />
+      {/* <MarketingLandingAbout /> */}
 
-      <MarketingLandingProcess />
+      {/* <MarketingLandingServices /> */}
 
-      <MarketingLandingCaseStudies caseStudies={_caseStudies.slice(-6)} />
+      {/* <MarketingLandingProcess /> */}
 
-      <MarketingTeam members={_members} />
+      {/* <MarketingLandingCaseStudies caseStudies={_caseStudies.slice(-6)} /> */}
+
+      {/* <MarketingTeam members={_members} /> */}
+      <BlogMarketingLatestPosts posts={_marketingPosts.slice(0, 4)} />
 
       <PricingMarketing plans={_pricingMarketing} />
 
-      <MarketingLandingFaqs />
+      {/* <MarketingLandingFaqs /> */}
 
       <MarketingTestimonial testimonials={_testimonials} />
 
-      <BlogMarketingLatestPosts posts={_marketingPosts.slice(0, 4)} />
-
-      <MarketingLandingFreeSEO />
+      {/* <MarketingLandingFreeSEO /> */}
+      <MarketingLandingDownload />
 
       <MarketingNewsletter />
     </>

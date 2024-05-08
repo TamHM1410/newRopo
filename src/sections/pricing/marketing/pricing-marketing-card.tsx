@@ -15,7 +15,7 @@ type Props = {
 };
 
 export default function PricingMarketingCard({ plan }: Props) {
-  const basicLicense = plan.license === 'Basic';
+  const basicLicense = plan.license === 'Contained';
 
   const starterLicense = plan.license === 'Starter';
 
@@ -40,7 +40,7 @@ export default function PricingMarketingCard({ plan }: Props) {
 
       <Stack direction="row" justifyContent="space-between">
         <div>
-          <Typography variant="h4" component="div" sx={{ color: 'primary.main', mb: 2 }}>
+          <Typography variant="h4" component="div" sx={{ color: '#0baef4', mb: 2 }}>
             {plan.license}
           </Typography>
 
@@ -66,11 +66,11 @@ export default function PricingMarketingCard({ plan }: Props) {
           </Stack>
         ))}
       </Stack>
-
       <Button
         fullWidth
         size="large"
-        color={(premiumLicense && 'primary') || 'inherit'}
+        style={{ backgroundColor: '#0baef4' }}
+        // color={(premiumLicense && 'primary') || 'inherit'}
         variant={(basicLicense && 'outlined') || 'contained'}
       >
         Choose Package

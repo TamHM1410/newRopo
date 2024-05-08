@@ -1,15 +1,13 @@
 import { m } from 'framer-motion';
 
-import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
+import { Typography } from '@mui/material';
 import { alpha, useTheme } from '@mui/material/styles';
 
-import { paths } from 'src/routes/paths';
 import Image from 'src/components/image';
 import { fDate } from 'src/utils/format-time';
 import { IBlogPostProps } from 'src/types/blog';
-import { RouterLink } from 'src/routes/components';
 import { varHover, varTranHover } from 'src/components/animate';
 
 import PostTimeBlock from '../common/post-time-block';
@@ -62,16 +60,7 @@ export default function MarketingLatestPostItem({ post }: Props) {
             duration={post.duration}
             sx={{ color: 'inherit', opacity: 0.72 }}
           />
-
-          <Link
-            component={RouterLink}
-            href={paths.marketing.post}
-            variant="h4"
-            color="inherit"
-            underline="none"
-          >
-            {post.title}
-          </Link>
+          <Typography>{post.title}</Typography>
         </Stack>
 
         <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>

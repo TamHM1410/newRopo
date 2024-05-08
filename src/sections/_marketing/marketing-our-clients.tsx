@@ -36,7 +36,7 @@ export default function MarketingOurClients({ brands }: Props) {
   return (
     <Container
       sx={{
-        pt: { xs: 5, md: 10 },
+        pt: { xs: 5, md: 0 },
       }}
     >
       <Carousel {...carousel.carouselSettings}>
