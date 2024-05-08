@@ -33,7 +33,7 @@ export default function MarketingLandingHero() {
         //   imgUrl: 'https://www.devsnews.com/template/appzone/appzone/img/slider/slider1.jpg',
         // }),
         backgroundColor: '#5AB2FF',
-        overflow: 'hidden',
+        overflow: 'auto',
       }}
     >
       <Container
@@ -41,7 +41,8 @@ export default function MarketingLandingHero() {
           py: 15,
           display: { md: 'flex' },
           alignItems: { md: 'center' },
-          height: { md: `100vh` },
+          minHeight: { md: `100vh` },
+          height: { md: `auto` },
         }}
       >
         <Grid container columnSpacing={{ xs: 0, md: 10 }}>

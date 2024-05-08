@@ -39,7 +39,7 @@ export default function MarketingLandingStatics() {
         //   color: alpha(theme.palette.background.default, 0.4),
         //   imgUrl: 'https://www.devsnews.com/template/appzone/appzone/img/slider/slider1.jpg',
         // }),
-        overflow: 'hidden',
+        overflow: 'auto',
         backgroundColor: '#5AB2FF',
       }}
     >
@@ -49,7 +49,8 @@ export default function MarketingLandingStatics() {
           gap: 5,
           display: { md: 'flex' },
           alignItems: { md: 'center' },
-          height: { md: `100vh` },
+          minHeight: { md: `100vh` },
+          height: { md: `auto` },
           flexDirection: 'column',
         }}
       >

@@ -32,7 +32,7 @@ export default function MarketingLandingCoreFeature() {
         //   imgUrl: 'https://www.devsnews.com/template/appzone/appzone/img/slider/slider1.jpg',
         // }),
         bgcolor: 'background.neutral',
-        overflow: 'hidden',
+        overflow: 'auto',
       }}
     >
       <Typography
@@ -77,7 +77,8 @@ export default function MarketingLandingCoreFeature() {
           py: { md: 15, xs: 5 },
           display: { md: 'flex' },
           alignItems: { md: 'center' },
-          height: { md: `100vh` },
+          minHeight: { md: `100vh` },
+          height: { md: `auto` },
         }}
       >
         <Grid data-aos="fade-right" container columnSpacing={{ xs: 0, md: 10 }}>
