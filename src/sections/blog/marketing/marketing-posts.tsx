@@ -23,7 +23,6 @@ export default function MarketingPosts({ posts }: Props) {
             xs: 'repeat(1, 1fr)',
             sm: 'repeat(2, 1fr)',
           },
-          backgroundColor: '#F7EEDD',
         }}
       >
         {posts.slice(0, 8).map((post) => (

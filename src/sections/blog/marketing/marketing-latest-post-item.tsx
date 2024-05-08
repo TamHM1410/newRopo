@@ -1,16 +1,11 @@
 import { m } from 'framer-motion';
 
 import Stack from '@mui/material/Stack';
-import Avatar from '@mui/material/Avatar';
-import { Typography } from '@mui/material';
-import { alpha, useTheme } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 
 import Image from 'src/components/image';
-import { fDate } from 'src/utils/format-time';
 import { IBlogPostProps } from 'src/types/blog';
 import { varHover, varTranHover } from 'src/components/animate';
-
-import PostTimeBlock from '../common/post-time-block';
 
 // ----------------------------------------------------------------------
 
@@ -33,14 +28,7 @@ export default function MarketingLatestPostItem({ post }: Props) {
       }}
     >
       <m.div variants={varHover(1.25)} transition={varTranHover()}>
-        <Image
-          src={post.coverUrl}
-          alt={post.title}
-          ratio="3/4"
-          overlay={`linear-gradient(to top, ${alpha(theme.palette.common.black, 0)} 0%, ${
-            theme.palette.common.black
-          } 75%)`}
-        />
+        <Image src={post.coverUrl} alt={post.title} ratio="3/4" />
       </m.div>
 
       <Stack
@@ -54,7 +42,7 @@ export default function MarketingLatestPostItem({ post }: Props) {
           color: 'common.white',
         }}
       >
-        <Stack spacing={2}>
+        {/* <Stack spacing={2}>
           <PostTimeBlock
             createdAt={fDate(post.createdAt)}
             duration={post.duration}
@@ -66,7 +54,7 @@ export default function MarketingLatestPostItem({ post }: Props) {
         <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>
           <Avatar src={post.author.avatarUrl} sx={{ mr: 1 }} />
           {post.author.name}
-        </Stack>
+        </Stack> */}
       </Stack>
     </Stack>
   );
