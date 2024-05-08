@@ -63,7 +63,7 @@ export default function MarketingLandingStatics() {
             mb: 5,
           }}
         >
-          <Typography sx={{ fontSize: 50, fontWeight: 700 }}>Statistics</Typography>
+          <Typography sx={{ fontSize: 50, fontWeight: 700, color: 'white' }}>Statistics</Typography>
           <Typography sx={{ fontSize: 30 }}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua.
