@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import { Apple, Twitter } from 'lucide-react';
+import { Icon } from '@iconify/react';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -52,7 +52,7 @@ export default function MarketingLandingDownload() {
               <Typography sx={{ color: 'white', fontSize: { md: 40 }, fontWeight: 900 }}>
                 Download app now
               </Typography>
-              <Typography variant="overline">
+              <Typography variant="overline" sx={{ color: '#e3e3e3' }}>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipisicing
                 incididunt{' '}
@@ -71,7 +71,8 @@ export default function MarketingLandingDownload() {
                   size="large"
                 >
                   {' '}
-                  <Twitter size={36} color="#ffffff" />
+                  {/* <Twitter size={36} color="#ffffff" /> */}
+                  <Icon icon="uit:google" width={36} />
                   GOOGLE PLAY
                 </Button>
                 <Button
@@ -87,8 +88,7 @@ export default function MarketingLandingDownload() {
                   size="large"
                 >
                   {' '}
-                  <Apple size={36} color="#ffffff" />
-                  APP STORE
+                  <Icon icon="la:apple" width={36} /> APP STORE
                 </Button>
               </Typography>
             </Typography>

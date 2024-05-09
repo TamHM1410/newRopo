@@ -43,6 +43,7 @@ export default function MarketingLandingHero() {
           display: { md: 'flex', xs: 'flex' },
           alignItems: { md: 'center', xs: 'center' },
           minHeight: { md: `100vh` },
+          maxHeight: { md: '800vh' },
           height: { md: `auto` },
         }}
       >
@@ -55,7 +56,7 @@ export default function MarketingLandingHero() {
               textAlign: { xs: 'center', md: 'left' },
             }}
           >
-            <Typography variant="h1" sx={{ my: 5, color: '#141031' }}>
+            <Typography variant="h1" sx={{ my: 5, color: '#c4e3ff' }}>
               It always seems impossible until done.
             </Typography>
 

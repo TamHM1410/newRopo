@@ -50,6 +50,8 @@ export default function MarketingLandingStatics() {
           display: { md: 'flex', xs: 'flex' },
           alignItems: { md: 'center', xs: 'center' },
           minHeight: { md: `100vh` },
+          maxHeight: { md: '800vh' },
+
           height: { md: `auto` },
           flexDirection: 'column',
         }}
@@ -64,10 +66,10 @@ export default function MarketingLandingStatics() {
             textAlign: 'center',
           }}
         >
-          <Typography variant="overline" sx={{ fontSize: 50, fontWeight: 700, color: '#D2E0ED' }}>
+          <Typography variant="overline" sx={{ fontSize: 50, fontWeight: 900, color: '#D2E0ED' }}>
             Statistics
           </Typography>
-          <Typography variant="overline" sx={{ fontSize: 20 }}>
+          <Typography variant="overline" sx={{ fontSize: 20, color: '#fafae4' }}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua.
           </Typography>

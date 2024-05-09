@@ -42,7 +42,7 @@ export default function MarketingLandingCoreFeature() {
           justifyContent: { md: 'center', xs: 'center' },
           pt: 10,
           fontSize: 40,
-          fontWeight: 600,
+          fontWeight: 800,
           color: '#5884E7',
         }}
       >
@@ -83,6 +83,8 @@ export default function MarketingLandingCoreFeature() {
           alignItems: { md: 'center', xs: 'center' },
           justifyContent: 'center',
           minHeight: { md: `100vh` },
+          maxHeight: { md: '800vh' },
+
           height: { md: `auto` },
         }}
       >
@@ -218,25 +220,17 @@ export default function MarketingLandingCoreFeature() {
               sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                pt: { md: 1, xs: 1 },
+                pt: { md: 5, xs: 5 },
                 ml: { xs: 2, md: 0 },
-                position: { sm: 'relative', xs: 'relative' },
-                left: { sm: 10, xs: 15 },
+                mt: { sm: -3, md: -3, xs: -4 },
               }}
             >
-              <Typography
-                variant="overline"
-                sx={{
-                  fontSize: { md: 30, xs: 20 },
-                  fontWeight: 500,
-                  justifyContent: { sm: 'flex-end', md: 'flex-end', xs: 'center' },
-                }}
-              >
-                Use on any Device
+              <Typography variant="overline" sx={{ fontSize: { md: 30, xs: 20 }, fontWeight: 500 }}>
+                use on any device
               </Typography>
               <Typography variant="overline" sx={{ pt: { md: 3, xs: 3 }, color: '#4b5d73' }}>
-                Experience a smooth and convenient app usage on any device you choose. Work and play
-                anytime, anywhere!
+                EXPERIENCE A SMOOTH AND CONVENIENT APP USAGE ON ANY DEVICE YOU CHOOSE. WORK AND PLAY
+                ANYTIME, ANYWHERE!
               </Typography>
             </Typography>
 
@@ -247,7 +241,7 @@ export default function MarketingLandingCoreFeature() {
                 flexDirection: 'column',
                 pt: { md: 5, xs: 5 },
                 ml: { xs: 2, md: 0 },
-                mt: 2,
+                mt: { md: 2, sm: 2, xs: 0.1 },
               }}
             >
               <Typography variant="overline" sx={{ fontSize: { md: 30, xs: 20 }, fontWeight: 500 }}>
