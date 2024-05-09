@@ -81,9 +81,6 @@ export default function PricingMarketing({ plans }: Props) {
                 '& .MuiSwitch-track': {
                   backgroundColor: '#5884E7', // Apply custom color to the track
                 },
-                '& .Mui-checked': {
-                  backgroundColor: '#fff', // Optional: customize the thumb color
-                },
               }}
             />
 
