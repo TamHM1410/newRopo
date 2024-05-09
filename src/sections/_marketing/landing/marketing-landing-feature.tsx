@@ -44,6 +44,7 @@ export default function MarketingLandingCoreFeature() {
           fontSize: 40,
           fontWeight: 800,
           color: '#5884E7',
+          textAlign: { xs: 'center', md: 'center' },
         }}
       >
         CORE FEATURE
@@ -234,6 +235,7 @@ export default function MarketingLandingCoreFeature() {
                 sx={{
                   fontSize: { md: 30, xs: 18 },
                   fontWeight: { md: 500, sm: 500, xs: 700 },
+                  ml: { xs: 1 },
                 }}
               >
                 use on any device
@@ -263,7 +265,11 @@ export default function MarketingLandingCoreFeature() {
             >
               <Typography
                 variant="overline"
-                sx={{ fontSize: { md: 30, xs: 18 }, fontWeight: { md: 500, sm: 500, xs: 700 } }}
+                sx={{
+                  fontSize: { md: 30, xs: 18 },
+                  fontWeight: { md: 500, sm: 500, xs: 700 },
+                  ml: { xs: 1 },
+                }}
               >
                 Fast History Excution
               </Typography>
@@ -291,7 +297,12 @@ export default function MarketingLandingCoreFeature() {
             >
               <Typography
                 variant="overline"
-                sx={{ fontSize: { md: 30, xs: 18 }, fontWeight: { md: 500, sm: 500, xs: 700 } }}
+                sx={{
+                  fontSize: { md: 30, xs: 18 },
+                  fontWeight: { md: 500, sm: 500, xs: 700 },
+                  ml: { xs: 1 },
+                  mt: { xs: -0.8 },
+                }}
               >
                 Keep your history safe
               </Typography>
