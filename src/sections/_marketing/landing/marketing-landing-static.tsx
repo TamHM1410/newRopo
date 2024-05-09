@@ -78,8 +78,9 @@ export default function MarketingLandingStatics() {
             <Card
               sx={{
                 px: { md: 15 },
-                position: { xs: 'relative' },
+                position: { xs: 'relative', sm: 'relative' },
                 right: { xs: 8 },
+                left: { sm: 10 },
 
                 mt: { xs: 2 },
                 display: 'flex',
@@ -118,7 +119,7 @@ export default function MarketingLandingStatics() {
                 display: 'flex',
                 justifyContent: 'center',
                 position: { sm: 'relative', xs: 'relative' },
-                right: { sm: 25, xs: 8 },
+                right: { sm: 15, xs: 8 },
               }}
             >
               <CardContent sx={{ width: 'auto' }}>
@@ -149,10 +150,12 @@ export default function MarketingLandingStatics() {
               sx={{
                 px: { md: 15 },
                 mt: { xs: 2 },
+
                 display: 'flex',
                 justifyContent: 'center',
                 position: { sm: 'relative', xs: 'relative' },
-                right: { sm: 25, xs: 8 },
+                right: { sm: 4.5, xs: 8 },
+                left: { sm: 10 },
               }}
             >
               <CardContent sx={{ width: 'auto' }}>
@@ -182,9 +185,10 @@ export default function MarketingLandingStatics() {
             <Card
               sx={{
                 px: { md: 15 },
+
                 mt: { xs: 2 },
                 position: { sm: 'relative', xs: 'relative' },
-                right: { sm: 25, xs: 8 },
+                right: { sm: 15, xs: 8 },
                 display: 'flex',
                 justifyContent: 'center',
               }}
