@@ -222,7 +222,7 @@ export default function MarketingLandingCoreFeature() {
                 flexDirection: 'column',
                 pt: { md: 5, xs: 5 },
                 ml: { xs: 2, md: 0 },
-                mt: { sm: -3, md: -3, xs: -4 },
+                mt: { sm: -4, md: -3, xs: -4 },
               }}
             >
               <Typography variant="overline" sx={{ fontSize: { md: 30, xs: 20 }, fontWeight: 500 }}>
