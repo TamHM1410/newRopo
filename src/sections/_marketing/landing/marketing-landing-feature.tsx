@@ -99,7 +99,7 @@ export default function MarketingLandingCoreFeature() {
             sx={{
               textAlign: { xs: 'center', md: 'left' },
               position: { sm: 'relative', xs: 'relative' },
-              right: { sm: 10, xs: 5 },
+              right: { sm: 10, xs: 10 },
             }}
           >
             <Typography
@@ -112,14 +112,14 @@ export default function MarketingLandingCoreFeature() {
                 sx={{
                   display: 'flex',
                   justifyContent: { sm: 'flex-end', md: 'flex-end', xs: 'center' },
-                  fontSize: { md: 25, xs: 20 },
-                  textAlign: { sm: 'end', md: 'end', xs: 'start' },
-
+                  fontSize: { md: 30, xs: 20 },
                   fontWeight: 500,
+                  // mt: { md: 2, sm: 2 },
                 }}
               >
-                User Friendly
+                User friendly
               </Typography>
+
               <Typography
                 variant="overline"
                 sx={{
@@ -131,8 +131,8 @@ export default function MarketingLandingCoreFeature() {
                   textAlign: { sm: 'end', md: 'end', xs: 'start' },
                 }}
               >
-                Our focus is on making your experience as smooth and enjoyable as possible. Discover
-                the ease of use .
+                With retina-ready support, you can enjoy a premium visual experience that enhances
+                your use of our application.
               </Typography>
             </Typography>
             <Typography
@@ -221,7 +221,7 @@ export default function MarketingLandingCoreFeature() {
                 pt: { md: 1, xs: 1 },
                 ml: { xs: 2, md: 0 },
                 position: { sm: 'relative', xs: 'relative' },
-                left: { sm: 10, xs: 5 },
+                left: { sm: 10, xs: 15 },
               }}
             >
               <Typography
