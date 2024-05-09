@@ -75,7 +75,7 @@ export default function MarketingLandingStatics() {
           </Typography>
         </Typography>
 
-        <Grid container columnSpacing={{ xs: 0, md: 12, sm: 12 }} data-aos="zoom-in">
+        <Grid container columnSpacing={{ xs: 0, md: 12, sm: 12 }} data-aos="zoom-in" spacing={5}>
           <Grid xs={12} sm={6} md={3} lg={3}>
             <Card
               sx={{

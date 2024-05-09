@@ -83,7 +83,8 @@ export default function MarketingLandingCoreFeature() {
           alignItems: { md: 'center', xs: 'center' },
           justifyContent: 'center',
           minHeight: { md: `100vh` },
-          maxHeight: { md: '800vh' },
+          maxHeight: { md: '800vh', xs: '100vh' },
+          overflow: 'hidden',
 
           height: { md: `auto` },
         }}
@@ -97,6 +98,7 @@ export default function MarketingLandingCoreFeature() {
           <Grid
             xs={6}
             md={4}
+            sm={!mdUp ?? 6}
             lg={4}
             sx={{
               textAlign: { xs: 'center', md: 'left' },
@@ -107,6 +109,7 @@ export default function MarketingLandingCoreFeature() {
             <Typography
               sx={{
                 pt: { md: 1, xs: 1 },
+                overflow: 'hidden',
               }}
             >
               <Typography
@@ -114,8 +117,8 @@ export default function MarketingLandingCoreFeature() {
                 sx={{
                   display: 'flex',
                   justifyContent: { sm: 'flex-end', md: 'flex-end', xs: 'center' },
-                  fontSize: { md: 30, xs: 20 },
-                  fontWeight: 500,
+                  fontSize: { md: 30, xs: 18 },
+                  fontWeight: { md: 500, sm: 500, xs: 700 },
                   // mt: { md: 2, sm: 2 },
                 }}
               >
@@ -128,9 +131,10 @@ export default function MarketingLandingCoreFeature() {
                   pt: { md: 3, xs: 3 },
                   color: '#4b5d73',
                   ml: { xs: 5 },
-                  display: 'flex',
+                  display: { md: 'flex', xs: 'none', sm: 'flex' },
                   justifyContent: 'flex-start',
                   textAlign: { sm: 'end', md: 'end', xs: 'start' },
+                  overflow: 'hidden',
                 }}
               >
                 With retina-ready support, you can enjoy a premium visual experience that enhances
@@ -145,8 +149,8 @@ export default function MarketingLandingCoreFeature() {
                 sx={{
                   display: 'flex',
                   justifyContent: { sm: 'flex-end', md: 'flex-end', xs: 'center' },
-                  fontSize: { md: 30, xs: 20 },
-                  fontWeight: 500,
+                  fontSize: { md: 30, xs: 18 },
+                  fontWeight: { md: 500, sm: 500, xs: 700 },
                   mt: { md: 2, xs: 0.5, sm: 2 },
                 }}
               >
@@ -159,7 +163,7 @@ export default function MarketingLandingCoreFeature() {
                   pt: { md: 3, xs: 3 },
                   color: '#4b5d73',
                   ml: { xs: 5 },
-                  display: 'flex',
+                  display: { md: 'flex', xs: 'none', sm: 'flex' },
                   justifyContent: 'flex-start',
                   textAlign: { sm: 'end', md: 'end', xs: 'start' },
                 }}
@@ -169,15 +173,15 @@ export default function MarketingLandingCoreFeature() {
               </Typography>
             </Typography>
             <Typography
-              sx={{ fontSize: { md: 30, sx: 30 }, fontWeight: 500, pt: { md: 5, xs: 5 } }}
+              sx={{ fontSize: { md: 30, xs: 30 }, fontWeight: 500, pt: { md: 5, xs: 5 } }}
             >
               <Typography
                 variant="overline"
                 sx={{
-                  display: 'flex',
+                  display: { md: 'flex', xs: 'flex', sm: 'flex' },
                   justifyContent: { xs: 'center', md: 'flex-end', sm: 'flex-end' },
-                  fontSize: { md: 25, xs: 20 },
-                  fontWeight: 500,
+                  fontSize: { md: 30, xs: 18 },
+                  fontWeight: { md: 500, sm: 500, xs: 700 },
                   mt: { sm: 2, md: 2, xs: 6 },
                 }}
               >
@@ -190,7 +194,7 @@ export default function MarketingLandingCoreFeature() {
 
                   color: '#4b5d73',
                   ml: { xs: 5 },
-                  display: 'flex',
+                  display: { md: 'flex', xs: 'none', sm: 'flex' },
                   justifyContent: 'flex-start',
                   textAlign: { sm: 'end', md: 'end', xs: 'start' },
                 }}
@@ -214,7 +218,7 @@ export default function MarketingLandingCoreFeature() {
             </Grid>
           )}
 
-          <Grid xs={6} md={4} lg={4} data-aos="fade-right">
+          <Grid xs={6} md={4} lg={4} sm={!mdUp ?? 6} data-aos="fade-right" sx={{ height: 300 }}>
             <Typography
               variant="overline"
               sx={{
@@ -225,10 +229,23 @@ export default function MarketingLandingCoreFeature() {
                 mt: { sm: -4, md: -3, xs: -4 },
               }}
             >
-              <Typography variant="overline" sx={{ fontSize: { md: 30, xs: 20 }, fontWeight: 500 }}>
+              <Typography
+                variant="overline"
+                sx={{
+                  fontSize: { md: 30, xs: 18 },
+                  fontWeight: { md: 500, sm: 500, xs: 700 },
+                }}
+              >
                 use on any device
               </Typography>
-              <Typography variant="overline" sx={{ pt: { md: 3, xs: 3 }, color: '#4b5d73' }}>
+              <Typography
+                variant="overline"
+                sx={{
+                  pt: { md: 3, xs: 3 },
+                  color: '#4b5d73',
+                  display: { md: 'flex', xs: 'none', sm: 'flex' },
+                }}
+              >
                 EXPERIENCE A SMOOTH AND CONVENIENT APP USAGE ON ANY DEVICE YOU CHOOSE. WORK AND PLAY
                 ANYTIME, ANYWHERE!
               </Typography>
@@ -241,13 +258,23 @@ export default function MarketingLandingCoreFeature() {
                 flexDirection: 'column',
                 pt: { md: 5, xs: 5 },
                 ml: { xs: 2, md: 0 },
-                mt: { md: 2, sm: 2, xs: 0.1 },
+                mt: { md: 2, sm: 2, xs: -2.5 },
               }}
             >
-              <Typography variant="overline" sx={{ fontSize: { md: 30, xs: 20 }, fontWeight: 500 }}>
+              <Typography
+                variant="overline"
+                sx={{ fontSize: { md: 30, xs: 18 }, fontWeight: { md: 500, sm: 500, xs: 700 } }}
+              >
                 Fast History Excution
               </Typography>
-              <Typography variant="overline" sx={{ pt: { md: 3, xs: 3 }, color: '#4b5d73' }}>
+              <Typography
+                variant="overline"
+                sx={{
+                  pt: { md: 3, xs: 3 },
+                  color: '#4b5d73',
+                  display: { md: 'flex', xs: 'none', sm: 'flex' },
+                }}
+              >
                 With our fast history execution features, you can navigate and use your data without
                 any delays. Discover how efficient and seamless your experience can be!ected.
               </Typography>
@@ -262,10 +289,20 @@ export default function MarketingLandingCoreFeature() {
                 mt: { xs: 0 },
               }}
             >
-              <Typography variant="overline" sx={{ fontSize: { md: 30, xs: 20 }, fontWeight: 500 }}>
+              <Typography
+                variant="overline"
+                sx={{ fontSize: { md: 30, xs: 18 }, fontWeight: { md: 500, sm: 500, xs: 700 } }}
+              >
                 Keep your history safe
               </Typography>
-              <Typography variant="overline" sx={{ pt: { md: 3, xs: 3 }, color: '#4b5d73' }}>
+              <Typography
+                variant="overline"
+                sx={{
+                  pt: { md: 3, xs: 3 },
+                  color: '#4b5d73',
+                  display: { md: 'flex', xs: 'none', sm: 'flex' },
+                }}
+              >
                 With our fast history execution features, you can navigate and use your data without
                 any delays. Discover how efficient and seamless your experience can be!ected.
               </Typography>
