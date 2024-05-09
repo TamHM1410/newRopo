@@ -36,7 +36,8 @@ export default function MarketingOurClients({ brands }: Props) {
   return (
     <Container
       sx={{
-        pt: { xs: 5, md: 0 },
+        pt: { xs: 0, md: 0 },
+        gap: 2,
       }}
     >
       <Carousel {...carousel.carouselSettings}>
@@ -45,10 +46,11 @@ export default function MarketingOurClients({ brands }: Props) {
             key={brand.id}
             src={brand.image}
             sx={{
-              width: 106,
+              width: 'auto',
               minHeight: '20vh',
               height: 'auto',
               color: '#5884E7',
+              padding: 10,
             }}
           />
         ))}
