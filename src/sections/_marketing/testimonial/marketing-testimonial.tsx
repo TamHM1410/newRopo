@@ -41,7 +41,9 @@ export default function MarketingTestimonial({ testimonials }: Props) {
             Testimonials
           </Typography>
 
-          <Typography variant="h2">Who Love Our Work</Typography>
+          <Typography variant="h2" sx={{ color: '#5884E7' }}>
+            Who Love Our Work
+          </Typography>
         </Stack>
 
         <CarouselArrows
