@@ -20,9 +20,9 @@ import aos from '../../../utils/aos';
 export default function MarketingLandingStatics() {
   const [amount, setAmount] = useState({
     shareAmount: 550,
-    likeAmount: 7500,
-    downloadAmount: 10250,
-    starAmount: 1300,
+    likeAmount: 500,
+    downloadAmount: 250,
+    starAmount: 300,
   });
   const theme = useTheme();
 
@@ -40,7 +40,7 @@ export default function MarketingLandingStatics() {
         //   imgUrl: 'https://www.devsnews.com/template/appzone/appzone/img/slider/slider1.jpg',
         // }),
         overflow: 'auto',
-        backgroundColor: '#5AB2FF',
+        backgroundColor: '#5884E7',
       }}
     >
       <Container
@@ -56,16 +56,18 @@ export default function MarketingLandingStatics() {
       >
         <Typography
           sx={{
-            mt: 15,
+            mt: 5,
+            mb: 5,
             display: 'flex',
             justifyContent: 'center',
             flexDirection: 'column',
             textAlign: 'center',
-            mb: 5,
           }}
         >
-          <Typography sx={{ fontSize: 50, fontWeight: 700, color: 'white' }}>Statistics</Typography>
-          <Typography sx={{ fontSize: 30 }}>
+          <Typography variant="overline" sx={{ fontSize: 50, fontWeight: 700, color: '#D2E0ED' }}>
+            Statistics
+          </Typography>
+          <Typography variant="overline" sx={{ fontSize: 20 }}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua.
           </Typography>
@@ -82,19 +84,22 @@ export default function MarketingLandingStatics() {
               }}
             >
               <CardContent sx={{ width: 'auto' }}>
-                <ExternalLink size={100} color="#008DDA" />
+                <ExternalLink size={100} color="#0B1957" />
                 <Typography>
                   <Typography
                     sx={{
                       pt: 5,
                       fontSize: { md: 50, xs: 50 },
                       fontWeight: { md: 700 },
-                      color: '#008DDA',
+                      color: '#0B1957',
                     }}
                   >
                     <CountUp start={0} end={amount?.shareAmount} duration={15} />
                   </Typography>
-                  <Typography sx={{ pt: 2, fontSize: { md: 12, xs: 12 }, fontWeight: { md: 600 } }}>
+                  <Typography
+                    variant="overline"
+                    sx={{ pt: 2, fontSize: { md: 10, xs: 10 }, fontWeight: { md: 600 } }}
+                  >
                     Positive Ratings
                   </Typography>
                 </Typography>
@@ -111,19 +116,22 @@ export default function MarketingLandingStatics() {
               }}
             >
               <CardContent sx={{ width: 'auto' }}>
-                <ThumbsUp size={100} color="#008DDA" />
+                <ThumbsUp size={100} color="#0B1957" />
                 <Typography>
                   <Typography
                     sx={{
                       pt: 5,
                       fontSize: { md: 50, xs: 50 },
                       fontWeight: { md: 700 },
-                      color: '#008DDA',
+                      color: '#0B1957',
                     }}
                   >
                     <CountUp start={0} end={amount?.likeAmount} duration={15} />
                   </Typography>
-                  <Typography sx={{ pt: 2, fontSize: { md: 12, xs: 12 }, fontWeight: { md: 600 } }}>
+                  <Typography
+                    variant="overline"
+                    sx={{ pt: 2, fontSize: { md: 10, xs: 10 }, fontWeight: { md: 600 } }}
+                  >
                     Positive Ratings
                   </Typography>
                 </Typography>
@@ -140,19 +148,22 @@ export default function MarketingLandingStatics() {
               }}
             >
               <CardContent sx={{ width: 'auto' }}>
-                <Download size={100} color="#008DDA" />
+                <Download size={100} color="#0B1957" />
                 <Typography>
                   <Typography
                     sx={{
                       pt: 5,
                       fontSize: { md: 50, xs: 50 },
                       fontWeight: { md: 700 },
-                      color: '#008DDA',
+                      color: '#0B1957',
                     }}
                   >
                     <CountUp start={0} end={amount?.downloadAmount} duration={15} />
                   </Typography>
-                  <Typography sx={{ pt: 2, fontSize: { md: 12, xs: 15 }, fontWeight: { md: 600 } }}>
+                  <Typography
+                    variant="overline"
+                    sx={{ pt: 2, fontSize: { md: 10, xs: 10 }, fontWeight: { md: 600 } }}
+                  >
                     Positive Ratings
                   </Typography>
                 </Typography>
@@ -162,26 +173,29 @@ export default function MarketingLandingStatics() {
           <Grid xs={12} sm={6} md={3} lg={3}>
             <Card
               sx={{
-                px: { md: 15, xs: 5 },
+                px: { md: 15 },
                 mt: { xs: 2 },
                 display: 'flex',
                 justifyContent: 'center',
               }}
             >
               <CardContent sx={{ width: 'auto' }}>
-                <Star size={100} color="#008DDA" />
+                <Star size={100} color="#0B1957" />
                 <Typography>
                   <Typography
                     sx={{
                       pt: 5,
                       fontSize: { md: 50, xs: 50 },
                       fontWeight: { md: 700 },
-                      color: '#008DDA',
+                      color: '#0B1957',
                     }}
                   >
                     <CountUp start={0} end={amount?.starAmount} duration={15} />
                   </Typography>
-                  <Typography sx={{ pt: 2, fontSize: { md: 12, xs: 15 }, fontWeight: { md: 400 } }}>
+                  <Typography
+                    variant="overline"
+                    sx={{ pt: 2, fontSize: { md: 10, xs: 10 }, fontWeight: { md: 600 } }}
+                  >
                     Positive Ratings
                   </Typography>
                 </Typography>

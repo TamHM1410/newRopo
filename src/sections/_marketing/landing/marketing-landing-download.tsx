@@ -8,8 +8,9 @@ import Button from '@mui/material/Button';
 import { Typography } from '@mui/material';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
-import { useTheme } from '@mui/material/styles';
+import { alpha, useTheme } from '@mui/material/styles';
 
+import { bgGradient } from 'src/theme/css';
 import { useResponsive } from 'src/hooks/use-responsive';
 
 import aos from '../../../utils/aos';
@@ -26,7 +27,11 @@ export default function MarketingLandingDownload() {
   return (
     <Box
       sx={{
-        backgroundImage: 'url(https://www.devsnews.com/template/appzone/appzone/img/bg/2.jpg)',
+        ...bgGradient({
+          color: alpha('#5884E7', 0.3),
+          imgUrl: 'https://www.devsnews.com/template/appzone/appzone/img/bg/2.jpg',
+        }),
+        // backgroundImage: 'url(https://www.devsnews.com/template/appzone/appzone/img/bg/2.jpg)',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
@@ -46,7 +51,7 @@ export default function MarketingLandingDownload() {
               <Typography sx={{ color: 'white', fontSize: { md: 40 }, fontWeight: 900 }}>
                 Download app now
               </Typography>
-              <Typography>
+              <Typography variant="overline">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipisicing
                 incididunt{' '}
@@ -54,13 +59,13 @@ export default function MarketingLandingDownload() {
               <Typography sx={{ mt: 4, gap: 5, display: 'flex' }}>
                 <Button
                   sx={{
-                    backgroundColor: '#1640D6',
-                    color: 'white',
-                    borderColor: 'white',
-                    border: '1px solid',
+                    backgroundColor: alpha('#5884E7', 0.3),
+                    color: '#ffffff',
+                    borderColor: '#ffffff',
+                    border: '2px solid',
                     width: 200,
                     gap: 2,
-                    fontWeight: 600,
+                    fontWeight: 750,
                   }}
                   size="large"
                 >
@@ -70,13 +75,13 @@ export default function MarketingLandingDownload() {
                 </Button>
                 <Button
                   sx={{
-                    backgroundColor: '#1640D6',
-                    color: 'white',
-                    borderColor: 'white',
-                    border: '1px solid',
+                    backgroundColor: alpha('#5884E7', 0.3),
+                    color: '#ffffff',
+                    borderColor: '#ffffff',
+                    border: '2px solid',
                     width: 200,
                     gap: 2,
-                    fontWeight: 600,
+                    fontWeight: 750,
                   }}
                   size="large"
                 >

@@ -32,7 +32,7 @@ export default function MarketingLandingHero() {
         //   color: alpha(theme.palette.background.default, 0.4),
         //   imgUrl: 'https://www.devsnews.com/template/appzone/appzone/img/slider/slider1.jpg',
         // }),
-        backgroundColor: '#5AB2FF',
+        backgroundColor: '#5884E7',
         overflow: 'auto',
       }}
     >
@@ -54,7 +54,7 @@ export default function MarketingLandingHero() {
               textAlign: { xs: 'center', md: 'left' },
             }}
           >
-            <Typography variant="h1" sx={{ my: 5 }}>
+            <Typography variant="h1" sx={{ my: 5, color: '#141031' }}>
               It always seems impossible until done.
             </Typography>
 

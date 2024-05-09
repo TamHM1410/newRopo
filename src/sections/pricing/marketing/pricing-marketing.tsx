@@ -35,7 +35,7 @@ export default function PricingMarketing({ plans }: Props) {
         //   imgUrl: 'https://www.devsnews.com/template/appzone/appzone/img/slider/slider1.jpg',
         // }),
         overflow: 'hidden',
-        bgcolor: 'background.neutral',
+        bgcolor: '#D2E0ED',
       }}
     >
       <Container
@@ -59,11 +59,11 @@ export default function PricingMarketing({ plans }: Props) {
               textAlign: { xs: 'center', md: 'unset' },
             }}
           >
-            <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-              Pricing
-            </Typography>
+            <Typography variant="overline">Pricing</Typography>
 
-            <Typography variant="h2">Check Our Pricing</Typography>
+            <Typography variant="h2" sx={{ color: '#5884E7' }}>
+              Check Our Pricing
+            </Typography>
 
             <Typography sx={{ color: 'text.secondary' }}>
               Choose the perfect plan for your needs.
@@ -74,7 +74,18 @@ export default function PricingMarketing({ plans }: Props) {
           <Stack direction="row" alignItems="center">
             <Typography variant="overline">MONTHLY</Typography>
 
-            <Switch defaultChecked color="info" />
+            <Switch
+              defaultChecked={false}
+              color="info"
+              sx={{
+                '& .MuiSwitch-track': {
+                  backgroundColor: '#5884E7', // Apply custom color to the track
+                },
+                '& .Mui-checked': {
+                  backgroundColor: '#fff', // Optional: customize the thumb color
+                },
+              }}
+            />
 
             <Typography variant="overline">YEARLY (save 10%)</Typography>
           </Stack>

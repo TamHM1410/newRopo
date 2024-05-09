@@ -31,28 +31,30 @@ export default function MarketingLandingCoreFeature() {
         //   color: alpha(theme.palette.background.default, 0.7),
         //   imgUrl: 'https://www.devsnews.com/template/appzone/appzone/img/slider/slider1.jpg',
         // }),
-        bgcolor: 'background.neutral',
+        bgcolor: '#D2E0ED',
         overflow: 'auto',
       }}
     >
       <Typography
+        variant="overline"
         sx={{
           display: { md: 'flex', xs: 'flex' },
           justifyContent: { md: 'center', xs: 'center' },
           pt: 10,
-          fontSize: 50,
+          fontSize: 40,
           fontWeight: 600,
-          color: '#008DDA',
+          color: '#5884E7',
         }}
       >
         CORE FEATURE
       </Typography>
       {mdUp && (
         <Typography
+          variant="overline"
           sx={{
             display: { md: 'flex' },
             justifyContent: { md: 'center' },
-            fontSize: 30,
+            fontSize: 25,
             fontWeight: 700,
           }}
         >
@@ -61,10 +63,11 @@ export default function MarketingLandingCoreFeature() {
       )}
       {!mdUp && (
         <Typography
+          variant="overline"
           sx={{
             display: { md: 'flex', xs: 'flex' },
             justifyContent: { md: 'center', xs: 'center' },
-            fontSize: 30,
+            fontSize: 25,
             fontWeight: 700,
           }}
         >
@@ -96,16 +99,18 @@ export default function MarketingLandingCoreFeature() {
               }}
             >
               <Typography
+                variant="overline"
                 sx={{
                   display: 'flex',
                   justifyContent: 'flex-end',
-                  fontSize: { md: 30, sx: 30 },
+                  fontSize: { md: 25, sx: 25 },
                   fontWeight: 500,
                 }}
               >
                 User Friendly
               </Typography>
               <Typography
+                variant="overline"
                 sx={{
                   pt: { md: 3, xs: 3 },
                   color: '#4b5d73',
@@ -120,20 +125,23 @@ export default function MarketingLandingCoreFeature() {
               </Typography>
             </Typography>
             <Typography
-              sx={{ fontSize: { md: 30, sx: 30 }, fontWeight: 500, pt: { md: 5, xs: 5 } }}
+              sx={{ fontSize: { md: 25, sx: 25 }, fontWeight: 500, pt: { md: 5, xs: 5 } }}
             >
               <Typography
+                variant="overline"
                 sx={{
                   display: 'flex',
                   justifyContent: 'flex-end',
                   fontSize: { md: 30, sx: 30 },
                   fontWeight: 500,
+                  mt: 2,
                 }}
               >
                 Retina Ready
               </Typography>
 
               <Typography
+                variant="overline"
                 sx={{
                   pt: { md: 3, xs: 3 },
                   color: '#4b5d73',
@@ -151,16 +159,19 @@ export default function MarketingLandingCoreFeature() {
               sx={{ fontSize: { md: 30, sx: 30 }, fontWeight: 500, pt: { md: 5, xs: 5 } }}
             >
               <Typography
+                variant="overline"
                 sx={{
                   display: 'flex',
                   justifyContent: 'flex-end',
                   fontSize: { md: 30, sx: 30 },
                   fontWeight: 500,
+                  mt: 2,
                 }}
               >
                 Share rich media
               </Typography>
               <Typography
+                variant="overline"
                 sx={{
                   pt: { md: 3, xs: 3 },
                   color: '#4b5d73',
@@ -191,43 +202,54 @@ export default function MarketingLandingCoreFeature() {
 
           <Grid xs={6} md={4} lg={4} data-aos="fade-right">
             <Typography
+              variant="overline"
               sx={{
-                fontSize: { md: 30, sx: 30 },
-                fontWeight: 500,
+                display: 'flex',
+                flexDirection: 'column',
                 pt: { md: 1, xs: 1 },
                 ml: { xs: 2, md: 0 },
               }}
             >
-              Use on any Device
-              <Typography sx={{ pt: { md: 3, xs: 3 }, color: '#4b5d73' }}>
+              <Typography variant="overline" sx={{ fontSize: { md: 25, sx: 25 }, fontWeight: 500 }}>
+                Use on any Device
+              </Typography>
+              <Typography variant="overline" sx={{ pt: { md: 3, xs: 3 }, color: '#4b5d73' }}>
                 Experience a smooth and convenient app usage on any device you choose. Work and play
                 anytime, anywhere!
               </Typography>
             </Typography>
             <Typography
+              variant="overline"
               sx={{
-                fontSize: { md: 30, sx: 30 },
-                fontWeight: 500,
+                display: 'flex',
+                flexDirection: 'column',
                 pt: { md: 5, xs: 5 },
                 ml: { xs: 2, md: 0 },
+                mt: 2,
               }}
             >
-              Keep your history safe
-              <Typography sx={{ pt: { md: 3, xs: 3 }, color: '#4b5d73' }}>
+              <Typography variant="overline" sx={{ fontSize: { md: 25, sx: 25 }, fontWeight: 500 }}>
+                Keep your history safe
+              </Typography>
+              <Typography variant="overline" sx={{ pt: { md: 3, xs: 3 }, color: '#4b5d73' }}>
                 Protecting your data is our priority. With our application, you can rest assured
                 that your history is secure and private
               </Typography>
             </Typography>
             <Typography
+              variant="overline"
               sx={{
-                fontSize: { md: 30, sx: 30 },
-                fontWeight: 500,
+                display: 'flex',
+                flexDirection: 'column',
                 pt: { md: 5, xs: 5 },
                 ml: { xs: 2, md: 0 },
+                mt: 2,
               }}
             >
-              Fast history execution
-              <Typography sx={{ pt: { md: 3, xs: 3 }, color: '#4b5d73' }}>
+              <Typography variant="overline" sx={{ fontSize: { md: 25, sx: 25 }, fontWeight: 500 }}>
+                Fast History Excution
+              </Typography>
+              <Typography variant="overline" sx={{ pt: { md: 3, xs: 3 }, color: '#4b5d73' }}>
                 With our fast history execution features, you can navigate and use your data without
                 any delays. Discover how efficient and seamless your experience can be!ected.
               </Typography>

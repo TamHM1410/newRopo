@@ -40,7 +40,7 @@ export default function PricingMarketingCard({ plan }: Props) {
 
       <Stack direction="row" justifyContent="space-between">
         <div>
-          <Typography variant="h4" component="div" sx={{ color: '#0baef4', mb: 2 }}>
+          <Typography variant="h4" component="div" sx={{ color: '#5884E7', mb: 2 }}>
             {plan.license}
           </Typography>
 
@@ -69,7 +69,7 @@ export default function PricingMarketingCard({ plan }: Props) {
       <Button
         fullWidth
         size="large"
-        style={{ backgroundColor: '#0baef4' }}
+        style={{ backgroundColor: '#5884E7' }}
         // color={(premiumLicense && 'primary') || 'inherit'}
         variant={(basicLicense && 'outlined') || 'contained'}
       >

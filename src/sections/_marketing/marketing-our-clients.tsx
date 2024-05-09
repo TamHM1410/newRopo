@@ -46,8 +46,9 @@ export default function MarketingOurClients({ brands }: Props) {
             src={brand.image}
             sx={{
               width: 106,
-              height: 32,
-              color: 'text.disabled',
+              minHeight: '50vh',
+              height: 'auto',
+              color: '#5884E7',
             }}
           />
         ))}
