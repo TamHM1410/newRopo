@@ -66,6 +66,7 @@ export default function MarketingLandingCoreFeature() {
           variant="overline"
           sx={{
             display: { md: 'flex', xs: 'flex' },
+            textAlign: { xs: 'center' },
             justifyContent: { md: 'center', xs: 'center' },
             fontSize: 25,
             fontWeight: 700,
@@ -97,6 +98,8 @@ export default function MarketingLandingCoreFeature() {
             lg={4}
             sx={{
               textAlign: { xs: 'center', md: 'left' },
+              position: { sm: 'relative', xs: 'relative' },
+              right: { sm: 10, xs: 5 },
             }}
           >
             <Typography
@@ -108,8 +111,10 @@ export default function MarketingLandingCoreFeature() {
                 variant="overline"
                 sx={{
                   display: 'flex',
-                  justifyContent: 'flex-end',
-                  fontSize: { md: 25, sx: 25 },
+                  justifyContent: { sm: 'flex-end', md: 'flex-end', xs: 'center' },
+                  fontSize: { md: 25, xs: 20 },
+                  textAlign: { sm: 'end', md: 'end', xs: 'start' },
+
                   fontWeight: 500,
                 }}
               >
@@ -123,7 +128,7 @@ export default function MarketingLandingCoreFeature() {
                   ml: { xs: 5 },
                   display: 'flex',
                   justifyContent: 'flex-start',
-                  textAlign: 'end',
+                  textAlign: { sm: 'end', md: 'end', xs: 'start' },
                 }}
               >
                 Our focus is on making your experience as smooth and enjoyable as possible. Discover
@@ -137,10 +142,10 @@ export default function MarketingLandingCoreFeature() {
                 variant="overline"
                 sx={{
                   display: 'flex',
-                  justifyContent: 'flex-end',
-                  fontSize: { md: 30, sx: 30 },
+                  justifyContent: { sm: 'flex-end', md: 'flex-end', xs: 'center' },
+                  fontSize: { md: 30, xs: 20 },
                   fontWeight: 500,
-                  mt: 2,
+                  mt: { md: 2, xs: 0.5, sm: 2 },
                 }}
               >
                 Retina Ready
@@ -154,7 +159,7 @@ export default function MarketingLandingCoreFeature() {
                   ml: { xs: 5 },
                   display: 'flex',
                   justifyContent: 'flex-start',
-                  textAlign: 'end',
+                  textAlign: { sm: 'end', md: 'end', xs: 'start' },
                 }}
               >
                 With retina-ready support, you can enjoy a premium visual experience that enhances
@@ -168,10 +173,10 @@ export default function MarketingLandingCoreFeature() {
                 variant="overline"
                 sx={{
                   display: 'flex',
-                  justifyContent: 'flex-end',
-                  fontSize: { md: 30, sx: 30 },
+                  justifyContent: { xs: 'center', md: 'flex-end', sm: 'flex-end' },
+                  fontSize: { md: 25, xs: 20 },
                   fontWeight: 500,
-                  mt: 2,
+                  mt: { sm: 2, md: 2, xs: 6 },
                 }}
               >
                 Rich media
@@ -180,11 +185,12 @@ export default function MarketingLandingCoreFeature() {
                 variant="overline"
                 sx={{
                   pt: { md: 3, xs: 3 },
+
                   color: '#4b5d73',
                   ml: { xs: 5 },
                   display: 'flex',
                   justifyContent: 'flex-start',
-                  textAlign: 'end',
+                  textAlign: { sm: 'end', md: 'end', xs: 'start' },
                 }}
               >
                 Experience rapid and efficient access to your history with our cutting-edge
@@ -214,9 +220,18 @@ export default function MarketingLandingCoreFeature() {
                 flexDirection: 'column',
                 pt: { md: 1, xs: 1 },
                 ml: { xs: 2, md: 0 },
+                position: { sm: 'relative', xs: 'relative' },
+                left: { sm: 10, xs: 5 },
               }}
             >
-              <Typography variant="overline" sx={{ fontSize: { md: 25, sx: 25 }, fontWeight: 500 }}>
+              <Typography
+                variant="overline"
+                sx={{
+                  fontSize: { md: 30, xs: 20 },
+                  fontWeight: 500,
+                  justifyContent: { sm: 'flex-end', md: 'flex-end', xs: 'center' },
+                }}
+              >
                 Use on any Device
               </Typography>
               <Typography variant="overline" sx={{ pt: { md: 3, xs: 3 }, color: '#4b5d73' }}>
@@ -224,23 +239,7 @@ export default function MarketingLandingCoreFeature() {
                 anytime, anywhere!
               </Typography>
             </Typography>
-            <Typography
-              variant="overline"
-              sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                pt: { md: 5, xs: 5 },
-                mt: 2,
-              }}
-            >
-              <Typography variant="overline" sx={{ fontSize: { md: 25, sx: 25 }, fontWeight: 500 }}>
-                Keep your history safe
-              </Typography>
-              <Typography variant="overline" sx={{ pt: { md: 3, xs: 3 }, color: '#4b5d73' }}>
-                Protecting your data is our priority. With our application, you can rest assured
-                that your history is secure and private
-              </Typography>
-            </Typography>
+
             <Typography
               variant="overline"
               sx={{
@@ -251,8 +250,26 @@ export default function MarketingLandingCoreFeature() {
                 mt: 2,
               }}
             >
-              <Typography variant="overline" sx={{ fontSize: { md: 25, sx: 25 }, fontWeight: 500 }}>
+              <Typography variant="overline" sx={{ fontSize: { md: 30, xs: 20 }, fontWeight: 500 }}>
                 Fast History Excution
+              </Typography>
+              <Typography variant="overline" sx={{ pt: { md: 3, xs: 3 }, color: '#4b5d73' }}>
+                With our fast history execution features, you can navigate and use your data without
+                any delays. Discover how efficient and seamless your experience can be!ected.
+              </Typography>
+            </Typography>
+            <Typography
+              variant="overline"
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                pt: { md: 5, xs: 5 },
+                ml: { xs: 2, md: 0 },
+                mt: { xs: 0 },
+              }}
+            >
+              <Typography variant="overline" sx={{ fontSize: { md: 30, xs: 20 }, fontWeight: 500 }}>
+                Keep your history safe
               </Typography>
               <Typography variant="overline" sx={{ pt: { md: 3, xs: 3 }, color: '#4b5d73' }}>
                 With our fast history execution features, you can navigate and use your data without

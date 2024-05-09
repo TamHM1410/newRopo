@@ -79,9 +79,9 @@ export default function MarketingLandingStatics() {
               sx={{
                 px: { md: 15 },
                 position: { xs: 'relative', sm: 'relative' },
-                right: { xs: 8 },
-                left: { sm: 10 },
-
+                right: { xs: 1 },
+                left: { sm: 2 },
+                mb: { sm: 5 },
                 mt: { xs: 2 },
                 display: 'flex',
                 justifyContent: 'center',
@@ -115,11 +115,13 @@ export default function MarketingLandingStatics() {
               sx={{
                 px: { md: 15 },
                 mt: { xs: 2 },
+                mb: { sm: 5 },
 
                 display: 'flex',
                 justifyContent: 'center',
                 position: { sm: 'relative', xs: 'relative' },
-                right: { sm: 15, xs: 8 },
+                right: { xs: 1 },
+                left: { sm: 0 },
               }}
             >
               <CardContent sx={{ width: 'auto' }}>
@@ -149,13 +151,13 @@ export default function MarketingLandingStatics() {
             <Card
               sx={{
                 px: { md: 15 },
-                mt: { xs: 2 },
+                mt: { xs: 2, sm: 2.5 },
 
                 display: 'flex',
                 justifyContent: 'center',
                 position: { sm: 'relative', xs: 'relative' },
-                right: { sm: 4.5, xs: 8 },
-                left: { sm: 10 },
+                right: { xs: 1 },
+                left: { sm: 3 },
               }}
             >
               <CardContent sx={{ width: 'auto' }}>
@@ -186,11 +188,12 @@ export default function MarketingLandingStatics() {
               sx={{
                 px: { md: 15 },
 
-                mt: { xs: 2 },
+                mt: { xs: 2, sm: 2.5 },
                 position: { sm: 'relative', xs: 'relative' },
-                right: { sm: 15, xs: 8 },
+                right: { xs: 1 },
                 display: 'flex',
                 justifyContent: 'center',
+                left: { sm: 2 },
               }}
             >
               <CardContent sx={{ width: 'auto' }}>
