@@ -47,8 +47,8 @@ export default function MarketingLandingStatics() {
         sx={{
           py: 5,
           gap: 5,
-          display: { md: 'flex' },
-          alignItems: { md: 'center' },
+          display: { md: 'flex', xs: 'flex' },
+          alignItems: { md: 'center', xs: 'center' },
           minHeight: { md: `100vh` },
           height: { md: `auto` },
           flexDirection: 'column',
@@ -73,11 +73,14 @@ export default function MarketingLandingStatics() {
           </Typography>
         </Typography>
 
-        <Grid container columnSpacing={{ xs: 0, md: 12 }} data-aos="zoom-in">
+        <Grid container columnSpacing={{ xs: 0, md: 12, sm: 12 }} data-aos="zoom-in">
           <Grid xs={12} sm={6} md={3} lg={3}>
             <Card
               sx={{
                 px: { md: 15 },
+                position: { xs: 'relative' },
+                right: { xs: 8 },
+
                 mt: { xs: 2 },
                 display: 'flex',
                 justifyContent: 'center',
@@ -111,8 +114,11 @@ export default function MarketingLandingStatics() {
               sx={{
                 px: { md: 15 },
                 mt: { xs: 2 },
+
                 display: 'flex',
                 justifyContent: 'center',
+                position: { sm: 'relative', xs: 'relative' },
+                right: { sm: 25, xs: 8 },
               }}
             >
               <CardContent sx={{ width: 'auto' }}>
@@ -145,6 +151,8 @@ export default function MarketingLandingStatics() {
                 mt: { xs: 2 },
                 display: 'flex',
                 justifyContent: 'center',
+                position: { sm: 'relative', xs: 'relative' },
+                right: { sm: 25, xs: 8 },
               }}
             >
               <CardContent sx={{ width: 'auto' }}>
@@ -175,6 +183,8 @@ export default function MarketingLandingStatics() {
               sx={{
                 px: { md: 15 },
                 mt: { xs: 2 },
+                position: { sm: 'relative', xs: 'relative' },
+                right: { sm: 25, xs: 8 },
                 display: 'flex',
                 justifyContent: 'center',
               }}

@@ -78,13 +78,19 @@ export default function MarketingLandingCoreFeature() {
       <Container
         sx={{
           py: { md: 15, xs: 5 },
-          display: { md: 'flex' },
-          alignItems: { md: 'center' },
+          display: { md: 'flex', xs: 'flex' },
+          alignItems: { md: 'center', xs: 'center' },
+          justifyContent: 'center',
           minHeight: { md: `100vh` },
           height: { md: `auto` },
         }}
       >
-        <Grid data-aos="fade-right" container columnSpacing={{ xs: 0, md: 10 }}>
+        <Grid
+          data-aos="fade-right"
+          container
+          columnSpacing={{ xs: 0, md: 10 }}
+          sx={{ marginRight: 5 }}
+        >
           <Grid
             xs={6}
             md={4}
@@ -168,7 +174,7 @@ export default function MarketingLandingCoreFeature() {
                   mt: 2,
                 }}
               >
-                Share rich media
+                Rich media
               </Typography>
               <Typography
                 variant="overline"
@@ -224,7 +230,6 @@ export default function MarketingLandingCoreFeature() {
                 display: 'flex',
                 flexDirection: 'column',
                 pt: { md: 5, xs: 5 },
-                ml: { xs: 2, md: 0 },
                 mt: 2,
               }}
             >

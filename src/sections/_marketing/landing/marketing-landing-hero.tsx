@@ -34,13 +34,14 @@ export default function MarketingLandingHero() {
         // }),
         backgroundColor: '#5884E7',
         overflow: 'auto',
+        px: 5,
       }}
     >
       <Container
         sx={{
           py: 15,
-          display: { md: 'flex' },
-          alignItems: { md: 'center' },
+          display: { md: 'flex', xs: 'flex' },
+          alignItems: { md: 'center', xs: 'center' },
           minHeight: { md: `100vh` },
           height: { md: `auto` },
         }}

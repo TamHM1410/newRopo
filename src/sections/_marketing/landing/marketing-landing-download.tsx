@@ -35,6 +35,7 @@ export default function MarketingLandingDownload() {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        overflowX: 'scroll',
       }}
     >
       <Container
@@ -56,15 +57,15 @@ export default function MarketingLandingDownload() {
                 incididunt ut labore et dolore.Lorem ipsum dolor sit amet, consectetur adipisicing
                 incididunt{' '}
               </Typography>
-              <Typography sx={{ mt: 4, gap: 5, display: 'flex' }}>
+              <Typography sx={{ mt: 4, gap: { md: 5, xs: 3 }, display: 'flex' }}>
                 <Button
                   sx={{
                     backgroundColor: alpha('#5884E7', 0.3),
                     color: '#ffffff',
                     borderColor: '#ffffff',
                     border: '2px solid',
-                    width: 200,
-                    gap: 2,
+                    width: { md: 200, xs: 170 },
+                    gap: { md: 2, xs: 1 },
                     fontWeight: 750,
                   }}
                   size="large"
@@ -79,8 +80,8 @@ export default function MarketingLandingDownload() {
                     color: '#ffffff',
                     borderColor: '#ffffff',
                     border: '2px solid',
-                    width: 200,
-                    gap: 2,
+                    width: { md: 200, xs: 170 },
+                    gap: { md: 2, xs: 1 },
                     fontWeight: 750,
                   }}
                   size="large"
